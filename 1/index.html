@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Logo</h1>
+      <button onclick="openNav()">Open</button>
+      <nav id="rightNav">
+        <div class="heading">
+          <h2>Apps menu</h2>
+          <button onclick="closeNav()">Close</button>
+        </div>
+        <ul>
+          <li>Home</li>
+          <li>Teams</li>
+          <li>Settings</li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <h1>Welcome to Javascript</h1>
+      <h1 id="name">nama suhail</h1>
+      <div id="parentContainer">
+        <button onclick="changeToBlue()">Change to blue</button>
+        <button onclick="changeToRed()">change to red</button>
+        <button onclick="openModal()">Open modal</button>
+        <div id="">
+          <button onclick="openModal('info')">Info</button>
+          <button onclick="openModal('warning')">Warning</button>
+          <button onclick="openModal('danger')">Danger</button>
+        </div>
+      </div>
+      <div id="errorModal">
+        <div style="text-align: center">
+          <h2 id="modalTitle">Error alert</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            aliquam cumque nisi atque ea voluptate quisquam illum consequatur,
+            provident veniam dolore ab nobis ad repudiandae, repellat quam
+            veritatis recusandae incidunt.
+          </p>
+        </div>
+        <button onclick="closeModal()" style="text-align: center">OK</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
