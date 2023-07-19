@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2>Video Player</h2>
+    <h2 id="title">Chill Web</h2>
     <div class="container">
       <div class="video-container">
-        <video controls width="100%" id="player">
+        <video controls="false" width="90%" height="100%" id="player">
           <source src="./Assets/videoplayback.mp4" />
         </video>
         <div class="button-container">
           <button id="playBtn" onclick="playVideo()">
-            <i class="bi bi-play-fill"></i>
+            <i style="width: 100px;" class="bi bi-play-fill"></i>
           </button>
         </div>
       </div>
@@ -29,14 +29,25 @@
       </div>
     </div>
     <div class="next-video">
-        <div>
-            <h2>Watch Next</h2></div>
-        <ul class="list-videos">
-            <li>Video1</li>
-            <li>Video2</li>
-            <li>Video3</li>
-            <li>Video4</li>
-        </ul>
+      <div>
+        <h2>Watch Next</h2>
+      </div>
+      <ul class="list-videos">
+        <li>
+          <button onclick="changeSong(1)">
+            Forget About You - <br />
+            John Kennedy
+          </button>
+        </li>
+        <li>
+          <button onclick="changeSong(2)">
+            Mourning - <br />
+            Post Malone
+          </button>
+        </li>
+        <!-- <li><button>Video3</button></li> -->
+        <!-- <li><button>Video4</button></li> -->
+      </ul>
     </div>
   </body>
   <script src="script.js"></script>
